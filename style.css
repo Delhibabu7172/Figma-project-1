@@ -555,7 +555,8 @@ transition: all .5s;
 }
 .home-part-7-content-head{
     text-align: center;
-  
+    padding-top: 40px;
+
 }
 .home-part-7-content-head h1{
     font-size: 50px;
@@ -747,8 +748,86 @@ margin-bottom: 20px;
     margin-left: 105px;
 }
 
+/*image slider  */
 
+.main-image{
+    position: relative;
+}
+.slider {
+    overflow: hidden;
+    width: 100%; /* Adjust as needed */
+    margin: 60px auto;
+    /* border: 2px solid red; */
+    padding-bottom: 10px;
+  }
 
+  /* Slider wrapper for the images */
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Individual slide */
+  .slide {
+ min-width: 250px;
+ margin: 0px 25px;
+  }
+  .slide .slider-div{
+    width: 100%;
+  }
+
+  /* Navigation buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    /* border: 2px solid red; */
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Button hover effect */
+  .prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000000;
+  }
+  /* Navigation indicator container */
+  .indicator-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Navigation indicator dot */
+  .indicator-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    margin-bottom: 60px;
+  }
+
+  /* Active indicator dot */
+  .indicator-dot.active {
+    background-color: #333;
+  }
 
 
 @media (max-width:1300px) {
@@ -957,7 +1036,13 @@ margin-bottom: 10px;
   width: 218px;
   margin-left: 222px;
 }
-
+.slide {
+    min-width: 220px;
+    margin: 0px 25px;
+     }
+     .indicator-dot {
+        margin-bottom: 40px;
+      }
 }
 
 @media (max-width:640px) {
@@ -1092,6 +1177,10 @@ margin-bottom: 10px;
 .footer-end{
     margin-left: 110px;
 }
+.slide {
+    min-width: 200px;
+    margin: 0px 25px;
+     }
 }
 
 @media (max-width:473px) {
