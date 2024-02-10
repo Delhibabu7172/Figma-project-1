@@ -543,10 +543,6 @@ transition: all .5s;
 .accordion-item{
     margin: 20px 0;
 }
-.accordion-item:first-of-type .accordion-button {
-    border-top-right-radius:0px !important;
-    border-top-left-radius:0px !important;
-}
 
 /*part-7  */
 .home-part-7{
